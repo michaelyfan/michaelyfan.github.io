@@ -1,0 +1,68 @@
+html,body {
+	height:100%;
+	width:100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+body {
+	background: url("../images/home.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#background-fade {
+	position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index:-2;
+}
+#title-container {
+	position: fixed;
+	margin-top: 60vh;
+	margin-left: 20vh;
+}
+#title-text {
+	color: white;
+	font-size: 80px;
+}
+.fa-info-circle {
+	color:  rgb(60,60,60);
+	margin-top: -20px;
+	cursor: pointer;
+	transition: color .5s ease 0s;
+	-o-transition: color .5s ease 0s;
+	-ms-transition: color .5s ease 0s;
+	-moz-transition: color .5s ease 0s;
+	-webkit-transition: color .5s ease 0s;
+}
+.fa-info-circle:hover {
+	color: purple;
+}
+#navigate-container {
+	position:fixed;
+	bottom:0;
+	left: 50%;
+  transform: translateX(-50%);
+	color:white;
+	font-size:24px;
+	margin-bottom: 10px;
+}
+.navigate-link:link {
+	color: white;
+	text-decoration: none;
+	-o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+.navigate-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.navigate-link:hover {
+	color: purple;
+	text-decoration: none;
+}
+.navigate-link:active {
+  color: white;
+  text-decoration: none;
+}

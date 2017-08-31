@@ -1,0 +1,5 @@
+For stuff page:
+
+-update old sAudio image dummy
+-mobile-responsive
+-resize the left of the sAudio image to center it w/ respect to text
