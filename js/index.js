@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $('.black-overlay').fadeOut(1000);
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
 

@@ -20,10 +20,18 @@ hr {
     background-size: cover;
     height: 800px;
     display: flex;
+    position: relative;
+}
+.black-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }
 #header-content-wrapper {
     width: 100%;
     margin-top: 30px;
+    z-index: 3;
 }
 #title-container {
     display: flex;
