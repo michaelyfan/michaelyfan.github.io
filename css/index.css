@@ -171,8 +171,8 @@ hr {
   position: relative;
   border: 1px ridge rgb(240,240,240);
 }
-#ople-project-link {
-  background: url("../images/projects/ople.png") no-repeat center center;
+#thoughts-project-link {
+  background: url("../images/projects/thoughts.jpeg") no-repeat center center;
   background-size: cover;
 }
 #saudio-project-link {
