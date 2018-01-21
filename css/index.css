@@ -170,6 +170,10 @@ hr {
   position: relative;
   border: 1px ridge rgb(240,240,240);
 }
+#oneshare-project-link {
+  background: url("../images/projects/oneshare.png") no-repeat center center;
+  background-size: cover;
+}
 #thoughts-project-link {
   background: url("../images/projects/thoughts.jpg") no-repeat center center;
   background-size: cover;
