@@ -1,226 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/a23d1f6bd6.js"></script>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.min.css">
 
-    <title>Michael Fan</title>
+  <title>Michael Fan</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div id='header-section'>
-      <div class='black-overlay'>
-
+  <div id='header-section'>
+    <div class='black-overlay'></div>
+    <div id='header-content-wrapper'>
+      <div id='title-container'>
+        <p id='title-text'>michael
+          <span style="color:purple;">fan</span>
+        </p>
       </div>
-      <div id='header-content-wrapper'>
-        <div id='title-container'>
-          <p id='title-text'>michael <span style="color:purple;" >fan</span></p>
+    </div>
+  </div>
 
+  <div class='nav'>
+    <a class='nav-link' href='#about-section'>about</a>
+    <a class='nav-link' href='#education-section'>education</a>
+    <a class='nav-link' href='#projects-section'>projects</a>
+    <a class='nav-link' href='#resume-section'>resume</a>
+    <a class='nav-link' href='#links-section'>links</a>
+  </div>
+
+  <div id='about-section' class='section'>
+    <div id='about-content-wrapper'>
+      <h1 class='section-header'>
+        about
+      </h1>
+      <div id='about-info-wrapper'>
+        <img class='about-img' src='images/profile2.jpg'>
+        <p id='about-info'>
+          hi! i'm a first-year cs major at Georgia Tech who enjoys exploring whatever technical stuff i can get my hands on. you'll
+          usually find me making pretty webapps, writing code, studying, rowing a boat, or eating. in my free time, i like
+          to cook, go jogging right as the sun sets, and play the occasional video game.
+          <br />
+          <br /> my resume can be found
+          <a href='#resume-section'>below</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id='education-section' class='section'>
+    <div id='education-content-wrapper'>
+      <h1 class='section-header'>
+        education
+      </h1>
+      <div id='schools-wrapper'>
+        <div class='school-column' id='gt-column'>
+          <a href='http://www.gatech.edu/' target='_blank'>
+            <img src='images/gt.svg' alt='Georgia Institute of Technology' class='school-img' />
+          </a>
+          <p>'21</p>
+        </div>
+        <div class='school-column' id='stoga-column'>
+          <a href='https://www.tesd.net/stoga' target='_blank'>
+            <img src='images/stoga.svg' alt='Conestoga High School' class='school-img' />
+          </a>
+          <p>'17</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- <div class='nav'>
-      <a class='nav-link' href='#'>about</a>
-      <a class='nav-link' href='#'>education</a>
-      <a class='nav-link' href='#'>projects</a>
-      <a class='nav-link' href='#'>resume</a>
-      <a class='nav-link' href='#'>links</a>
-    </div> -->
+  <hr>
 
-    <div class='nav'>
-      <a class='nav-link' href='#about-section'>about</a>
-      <a class='nav-link' href='#education-section'>education</a>
-      <a class='nav-link' href='#projects-section'>projects</a>
-      <a class='nav-link' href='#resume-section'>resume</a>
-      <a class='nav-link' href='#links-section'>links</a>
-    </div>
+  <div id='projects-section' class='section'>
+    <div id='projects-content-wrapper'>
+      <h1 class='section-header'>
+        projects
+      </h1>
+      <div id='projects-grid-wrapper'>
 
-
-    <div id='about-section' class='section'>
-      <div id='about-content-wrapper'>
-        <h1 class='section-header'>
-          about
-        </h1>
-        <div id='about-info-wrapper'>
-          <img class='about-img' src='images/profile2.jpg'>
-          <p id='about-info'>
-            hi! i'm a first-year cs major at Georgia Tech who enjoys exploring whatever technical stuff i can get my hands on. you'll usually find me making pretty webapps, writing code, studying, rowing a boat, or eating. in my free time, i like to cook, go jogging right as the sun sets, and play the occasional video game.
-            <br />
-            <br />
-            my resume can be found <a href='#resume-section'>below</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div id='education-section' class='section'>
-      <div id='education-content-wrapper'>
-        <h1 class='section-header'>
-          education
-        </h1>
-        <div id='schools-wrapper'>
-          <div class='school-column' id='gt-column'>
-            <a href='http://www.gatech.edu/' target='_blank'>
-              <img src='images/gt.png' alt='Georgia Institute of Technology' class='school-img' />
-            </a>
-            <p>'21</p>
+        <a href='https://oneshare-web.herokuapp.com/' target='_blank'>
+          <div class='project-link' id='oneshare-project-link'>
+            <div class='overlay'>
+              <div class='project-text-wrapper'>
+                <p class='project-title'>oneShare-web</p>
+                <p class='project-role'>WEB DEVELOPER</p>
+                <p class='project-description'>contact info sharing for the 21st century</p>
+              </div>
+            </div>
           </div>
-          <div class='school-column' id='stoga-column'>
-            <a href='https://www.tesd.net/stoga' target='_blank'>
-              <img src='images/stoga.png' alt='Conestoga High School' class='school-img' />
-            </a>
-            <p>'17</p>
+        </a>
+
+        <a href='https://infinite-coast-62358.herokuapp.com/' target='_blank'>
+          <div class='project-link' id='thoughts-project-link'>
+            <div class='overlay'>
+              <div class='project-text-wrapper'>
+                <p class='project-title'>thoughts</p>
+                <p class='project-role'>WEB DEVELOPER</p>
+                <p class='project-description'>put it on paper. or, at least, the web</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </a>
 
-    <hr>
-
-    <div id='projects-section' class='section'>
-      <div id='projects-content-wrapper'>
-        <h1 class='section-header'>
-          projects
-        </h1>
-        <div id='projects-grid-wrapper'>
-
-          <a href='https://oneshare-web.herokuapp.com/' target='_blank'>
-            <div class='project-link' id='oneshare-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>oneShare-web</p>
-                  <p class='project-role'>WEB DEVELOPER</p>
-                  <p class='project-description'>contact info sharing for the 21st century</p>
-                </div>
+        <a href='http://ople.io/sAudio/' target='_blank'>
+          <div class='project-link' id='saudio-project-link'>
+            <div class='overlay'>
+              <div class='project-text-wrapper'>
+                <p class='project-title'>sAudio</p>
+                <p class='project-role'>UI/UX DESIGNER, GRAPHICS DESIGNER</p>
+                <p class='project-description'>smarter audio. smarter music. papa john's</p>
               </div>
             </div>
-          </a>
-
-          <a href='https://infinite-coast-62358.herokuapp.com/' target='_blank'>
-            <div class='project-link' id='thoughts-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>thoughts</p>
-                  <p class='project-role'>WEB DEVELOPER</p>
-                  <p class='project-description'>put it on paper. or, at least, the web</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='http://ople.io/sAudio/' target='_blank'>
-            <div class='project-link' id='saudio-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>sAudio</p>
-                  <p class='project-role'>UI/UX DESIGNER, GRAPHICS DESIGNER</p>
-                  <p class='project-description'>smarter audio. smarter music. papa john's</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://github.com/michaelyfan/ElectricFieldSim-Web' target='_blank'>
-            <div class='project-link' id='electricfieldsim-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>ElectricFieldSim-Web</p>
-                  <p class='project-role'>DEVELOPER</p>
-                  <p class='project-description'>a web version of Orion-F's electric field simulator</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://devpost.com/software/leash-gctsd0' target='_blank'>
-            <div class='project-link' id='leash-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Leash</p>
-                  <p class='project-role'>GRAPHICS DESIGNER</p>
-                  <p class='project-description'>for the ones that get away</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div id='resume-section' class='section'>
-      <div id='resume-content-wrapper'>
-        <h1 class='section-header'>
-          resumé
-        </h1>
-        <div id='resume-frame-wrapper'>
-          <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" width="640" height="480"></iframe>
-        </div>
-        <p id='resume-alt'>Not loading? Click <a href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target='_blank'>here</a> to view.</p>
-      </div>
-    </div>
-
-    <hr>
-
-    <div id='links-section' class='section'>
-      <div id='links-content-wrapper'>
-        <h1 class='section-header'>
-          links
-        </h1>
-        <div id='links-wrapper'>
-
-          <div id='links-container'>
-
-            <a href='https://www.facebook.com/michael.fan.1420' target='_blank'>
-              <div class='link-container'>
-                <img class='link-icon' src='./images/links/facebook.png' />
-                <span class='link-text'>facebook</span>
-              </div>
-            </a>
-            <a href='https://github.com/michaelyfan' target='_blank'>
-              <div class='link-container'>
-                <img class='link-icon' src='./images/links/github-black.png' />
-                <span class='link-text'>github</span>
-              </div>
-            </a>
-            <a href='https://www.linkedin.com/in/michael-fan-a0a0b1143/' target='_blank'>
-              <div class='link-container'>
-                <img class='link-icon' src='./images/links/linkedin.png' />
-                <span class='link-text'>linkedin</span>
-              </div>
-            </a>
-            <a href="http://www.google.com/recaptcha/mailhide/d?k=01khEakVfLZv2lQwx-A7s_qQ==&amp;c=DG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01khEakVfLZv2lQwx-A7s_qQ\x3d\x3d\x26c\x3dDG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;">
-              <div class='link-container'>
-                <img class='link-icon' src='./images/links/gmail.png' />
-                <span class='link-text'>gmail</span>
-              </div>
-            </a>
-
           </div>
+        </a>
+
+        <a href='https://github.com/michaelyfan/ElectricFieldSim-Web' target='_blank'>
+          <div class='project-link' id='electricfieldsim-project-link'>
+            <div class='overlay'>
+              <div class='project-text-wrapper'>
+                <p class='project-title'>ElectricFieldSim-Web</p>
+                <p class='project-role'>DEVELOPER</p>
+                <p class='project-description'>a web version of Orion-F's electric field simulator</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href='https://devpost.com/software/leash-gctsd0' target='_blank'>
+          <div class='project-link' id='leash-project-link'>
+            <div class='overlay'>
+              <div class='project-text-wrapper'>
+                <p class='project-title'>Leash</p>
+                <p class='project-role'>GRAPHICS DESIGNER</p>
+                <p class='project-description'>for the ones that get away</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id='resume-section' class='section'>
+    <div id='resume-content-wrapper'>
+      <h1 class='section-header'>
+        resumé
+      </h1>
+      <div id='resume-frame-wrapper'>
+        <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" width="640" height="480"></iframe>
+      </div>
+      <p id='resume-alt'>Not loading? Click
+        <a href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target='_blank'>here</a> to view.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id='links-section' class='section'>
+    <div id='links-content-wrapper'>
+      <h1 class='section-header'>
+        links
+      </h1>
+      <div id='links-wrapper'>
+
+        <div id='links-container'>
+
+          <a href='https://www.facebook.com/michael.fan.1420' target='_blank'>
+            <div class='link-container'>
+              <img class='link-icon' src='images/links/facebook.svg' />
+              <span class='link-text'>facebook</span>
+            </div>
+          </a>
+          <a href='https://github.com/michaelyfan' target='_blank'>
+            <div class='link-container'>
+              <img class='link-icon' src='images/links/github-black.svg' />
+              <span class='link-text'>github</span>
+            </div>
+          </a>
+          <a href='https://www.linkedin.com/in/michael-fan-a0a0b1143/' target='_blank'>
+            <div class='link-container'>
+              <img class='link-icon' src='images/links/linkedin.svg' />
+              <span class='link-text'>linkedin</span>
+            </div>
+          </a>
+          <a href="http://www.google.com/recaptcha/mailhide/d?k=01khEakVfLZv2lQwx-A7s_qQ==&amp;c=DG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo="
+            onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01khEakVfLZv2lQwx-A7s_qQ\x3d\x3d\x26c\x3dDG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;">
+            <div class='link-container'>
+              <img class='link-icon' src='images/links/gmail.svg' />
+              <span class='link-text'>gmail</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <div id='bottombar-section' class='section'>
-      <p id='stupid-paragraph'>&copy; Michael Fan.<p>
-    </div>
+  <div id='bottombar-section' class='section'>
+    <p>&copy; Michael Fan.<p>
+  </div>
 
-    <script src="js/index.js"></script>
-  </body>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/a23d1f6bd6.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
 
 </html>
