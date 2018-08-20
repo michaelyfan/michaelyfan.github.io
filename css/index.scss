@@ -1,8 +1,24 @@
+$fontStackBackup: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+$fontStackTitle: "Josefin Sans", $fontStackBackup;
+$fontStack: "Josefin Sans", $fontStackBackup;
+$accentColor: #343434;
+
+$coverImage: url("../images/cover.jpg");
+$coverImageSmall: url("../images/cover-half.jpg");
+$corbiiImage: url("../images/projects/corbii.jpg");
+$electricFieldSimImage: url("../images/projects/electric-field-sim.png");
+$leashImage: url("../images/projects/leash.png");
+$thoughtsImage: url("../images/projects/isitorange.png");
+
+$fontWeightLight: 300;
+$fontWeight: 400;
+$fontWeightBold: 700;
+
 html, body {
   height: 100%;
   width: 100%;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  font-weight: 300;
+  font-family: $fontStack;
+  font-weight: $fontWeightLight;
   margin: 0;
 }
 
@@ -18,7 +34,7 @@ hr {
 }
 
 .accent {
-  color: #343434;
+  color: $accentColor;
 }
 
 .accent-link:link {
@@ -31,7 +47,7 @@ hr {
 }
 
 .accent-link:hover {
-  color: #343434;
+  color: $accentColor;
   text-decoration: none;
 }
 
@@ -41,7 +57,7 @@ hr {
 }
 
 #header-section {
-  background-image: url("../images/cover.jpg");
+  background-image: $coverImage;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,15 +68,17 @@ hr {
 
 @media only screen and (max-width: 600px) {
   #header-section {
-    background-image: url("../images/cover-half.jpg");
+    background-image: $coverImageSmall;
   }
 }
+
 #header-content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   color: white;
   text-align: center;
 }
@@ -74,8 +92,8 @@ hr {
 
 #title-text {
   font-size: 50px;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  font-weight: 700;
+  font-family: $fontStackTitle;
+  font-weight: $fontWeightBold;
 }
 
 .nav {
@@ -107,9 +125,10 @@ hr {
     display: none;
   }
 }
+
 .section-header {
   text-align: center;
-  font-weight: 700;
+  font-weight: $fontWeightBold;
 }
 
 .section {
@@ -123,10 +142,11 @@ hr {
 
 @media only screen and (max-width: 600px) {
   #about-section {
-    border-top: 5px double #646464;
+    border-top: 5px double rgb(100,100,100);
     margin-top: 0px;
   }
 }
+
 #about-info-wrapper {
   display: flex;
   justify-content: center;
@@ -150,6 +170,7 @@ hr {
     width: 500px;
   }
 }
+
 #schools-wrapper {
   display: flex;
   justify-content: center;
@@ -179,6 +200,7 @@ hr {
     width: auto;
   }
 }
+
 .school-img:hover {
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -204,26 +226,27 @@ hr {
 @media only screen and (min-width: 600px) {
   .project-link {
     width: 500px;
-    height: 300px;
+    height: 300px
   }
 }
+
 #project-link-1 {
-  background: url("../images/projects/corbii.jpg") no-repeat center center;
+  background: $corbiiImage no-repeat center center;
   background-size: cover;
 }
 
 #project-link-2 {
-  background: url("../images/projects/isitorange.png") no-repeat center center;
+  background: $thoughtsImage no-repeat center center;
   background-size: cover;
 }
 
 #project-link-3 {
-  background: url("../images/projects/electric-field-sim.png") no-repeat center center;
+  background: $electricFieldSimImage no-repeat center center;
   background-size: cover;
 }
 
 #project-link-4 {
-  background: url("../images/projects/leash.png") no-repeat center center;
+  background: $leashImage no-repeat center center;
   background-size: cover;
 }
 
@@ -238,6 +261,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+
   -o-transition: 0.2s;
   -ms-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -329,7 +353,7 @@ hr {
   font-size: 16px;
   font-style: italic;
   color: white;
-  background-color: #343434;
+  background-color: $accentColor;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -337,5 +361,3 @@ hr {
 }
 
 /*# sourceMappingURL=index.scss.map */
-
-/*# sourceMappingURL=index.css.map */

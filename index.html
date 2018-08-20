@@ -2,14 +2,23 @@
 <html>
 
   <head>
-
     <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/a23d1f6bd6.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+
+    <!-- favicon link -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,700" rel="stylesheet">
+
+    <!-- CSS link -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <title>Michael Fan</title>
@@ -19,31 +28,19 @@
   <body>
 
     <div id='header-section'>
-      <div class='black-overlay'>
-
-      </div>
       <div id='header-content-wrapper'>
-        <div id='title-container'>
-          <p id='title-text'>michael <span style="color:purple;" >fan</span></p>
 
-        </div>
+        <p id='title-subtext'>Hi, I'm</p>
+        <p id='title-text'>MICHAEL FAN</p>
       </div>
     </div>
 
-    <!-- <div class='nav'>
-      <a class='nav-link' href='#'>about</a>
-      <a class='nav-link' href='#'>education</a>
-      <a class='nav-link' href='#'>projects</a>
-      <a class='nav-link' href='#'>resume</a>
-      <a class='nav-link' href='#'>links</a>
-    </div> -->
-
     <div class='nav'>
-      <a class='nav-link' href='#about-section'>about</a>
-      <a class='nav-link' href='#education-section'>education</a>
-      <a class='nav-link' href='#projects-section'>projects</a>
-      <a class='nav-link' href='#resume-section'>resume</a>
-      <a class='nav-link' href='#links-section'>links</a>
+      <a class='accent-link nav-link' href='#about-section'>about</a>
+      <a class='accent-link nav-link' href='#education-section'>education</a>
+      <a class='accent-link nav-link' href='#projects-section'>projects</a>
+      <a class='accent-link nav-link' href='#resume-section'>resumé</a>
+      <a class='accent-link nav-link' href='#links-section'>links</a>
     </div>
 
 
@@ -55,10 +52,10 @@
         <div id='about-info-wrapper'>
           <img class='about-img' src='images/profile2.jpg'>
           <p id='about-info'>
-            hi! i'm a first-year cs major at Georgia Tech who enjoys exploring whatever technical stuff i can get my hands on. you'll usually find me making pretty webapps, writing code, studying, rowing a boat, or eating. in my free time, i like to cook, go jogging right as the sun sets, and play the occasional video game.
+            Hi! I'm a second-year computer science major at Georgia Tech with a degree focus on artifical intelligence and people-centered technology. I cofounded Corbii, an edutech startup, and I also row with the GT rowing team. In my free time, I like to cook, play Terraria, and eat over my recommended daily calorie limit.
             <br />
             <br />
-            my resume can be found <a href='#resume-section'>below</a>.
+            my resume can be found <a class='accent-link' href='#resume-section'>below</a>.
           </p>
         </div>
       </div>
@@ -97,44 +94,32 @@
         </h1>
         <div id='projects-grid-wrapper'>
 
-          <a href='https://oneshare-web.herokuapp.com/' target='_blank'>
-            <div class='project-link' id='oneshare-project-link'>
+          <a href='https://corbii.surge.sh/' target='_blank'>
+            <div class='project-link' id='project-link-1'>
               <div class='overlay'>
                 <div class='project-text-wrapper'>
-                  <p class='project-title'>oneShare-web</p>
-                  <p class='project-role'>WEB DEVELOPER</p>
-                  <p class='project-description'>contact info sharing for the 21st century</p>
+                  <p class='project-title'>Corbii</p>
+                  <p class='project-role'>CO-FOUNDER, DEVELOPER</p>
+                  <p class='project-description'>learning as smart as you</p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a href='https://infinite-coast-62358.herokuapp.com/' target='_blank'>
-            <div class='project-link' id='thoughts-project-link'>
+          <a href='http://isitorange.surge.sh/' target='_blank'>
+            <div class='project-link' id='project-link-2'>
               <div class='overlay'>
                 <div class='project-text-wrapper'>
-                  <p class='project-title'>thoughts</p>
-                  <p class='project-role'>WEB DEVELOPER</p>
-                  <p class='project-description'>put it on paper. or, at least, the web</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='http://ople.io/sAudio/' target='_blank'>
-            <div class='project-link' id='saudio-project-link'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>sAudio</p>
-                  <p class='project-role'>UI/UX DESIGNER, GRAPHICS DESIGNER</p>
-                  <p class='project-description'>smarter audio. smarter music. papa john's</p>
+                  <p class='project-title'>Is It Orange</p>
+                  <p class='project-role'>DEVELOPER</p>
+                  <p class='project-description'>Orange tho</p>
                 </div>
               </div>
             </div>
           </a>
 
           <a href='https://github.com/michaelyfan/ElectricFieldSim-Web' target='_blank'>
-            <div class='project-link' id='electricfieldsim-project-link'>
+            <div class='project-link' id='project-link-3'>
               <div class='overlay'>
                 <div class='project-text-wrapper'>
                   <p class='project-title'>ElectricFieldSim-Web</p>
@@ -146,7 +131,7 @@
           </a>
 
           <a href='https://devpost.com/software/leash-gctsd0' target='_blank'>
-            <div class='project-link' id='leash-project-link'>
+            <div class='project-link' id='project-link-4'>
               <div class='overlay'>
                 <div class='project-text-wrapper'>
                   <p class='project-title'>Leash</p>
@@ -171,7 +156,7 @@
         <div id='resume-frame-wrapper'>
           <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" width="640" height="480"></iframe>
         </div>
-        <p id='resume-alt'>Not loading? Click <a href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target='_blank'>here</a> to view.</p>
+        <p id='resume-alt'>Not loading? Click <a class='accent-lilnk' href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target='_blank'>here</a> to view.</p>
       </div>
     </div>
 
@@ -189,25 +174,19 @@
             <a href='https://www.facebook.com/michael.fan.1420' target='_blank'>
               <div class='link-container'>
                 <img class='link-icon' src='./images/links/facebook.png' />
-                <span class='link-text'>facebook</span>
+                <span class='link-text accent'>facebook</span>
               </div>
             </a>
             <a href='https://github.com/michaelyfan' target='_blank'>
               <div class='link-container'>
                 <img class='link-icon' src='./images/links/github-black.png' />
-                <span class='link-text'>github</span>
+                <span class='link-text accent'>github</span>
               </div>
             </a>
             <a href='https://www.linkedin.com/in/michael-fan-a0a0b1143/' target='_blank'>
               <div class='link-container'>
                 <img class='link-icon' src='./images/links/linkedin.png' />
-                <span class='link-text'>linkedin</span>
-              </div>
-            </a>
-            <a href="http://www.google.com/recaptcha/mailhide/d?k=01khEakVfLZv2lQwx-A7s_qQ==&amp;c=DG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01khEakVfLZv2lQwx-A7s_qQ\x3d\x3d\x26c\x3dDG07WRn2-xN1ik-xjUx4DBrxTnrzItpdPg7PrDn-9yo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;">
-              <div class='link-container'>
-                <img class='link-icon' src='./images/links/gmail.png' />
-                <span class='link-text'>gmail</span>
+                <span class='link-text accent'>linkedin</span>
               </div>
             </a>
 
@@ -217,8 +196,9 @@
     </div>
 
     <div id='bottombar-section' class='section'>
-      <p id='stupid-paragraph'>&copy; Michael Fan.<p>
+      <p id='stupid-paragraph'>&copy; Michael Fan</p>
     </div>
+
 
     <script src="js/index.js"></script>
   </body>

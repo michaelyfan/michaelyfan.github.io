@@ -1,62 +1,28 @@
+// Scroll animations
 $(document).ready(function(){
-  $('.black-overlay').fadeOut(1000);
-
   $("a").on('click', function(event) {
     if (this.hash !== "") {
-
       event.preventDefault();
       var hash = this.hash;
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+        scrollTop: $(hash).offset().top - 150
+      }, 500, function(){
 
-        // window.location.hash = hash;
       });
     }
   });
 });
 
-var yourNavigation = $(".nav");
-var stickyDiv = "nav-sticky";
-var yourHeader = $('#header-section').height();
+// Sticky navbar
+var navbar = $(".nav");
+var stickyClass = "nav-sticky";
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > yourHeader ) {
-    yourNavigation.addClass(stickyDiv);
+  var headerHeight = $('#header-section').height();
+  if( $(this).scrollTop() > headerHeight ) {
+    navbar.addClass(stickyClass);
   } else {
-    yourNavigation.removeClass(stickyDiv);
+    navbar.removeClass(stickyClass);
   }
 });
-
-// var TitleChanger = {
-// 	titles: [
-//     'michael <span style="color:purple;" >fan</span>',
-//     '<span style="color:purple;" >student</span>',
-//     '<span style="color:purple;" >designer</span>',
-//     '(noob) <span style="color:purple;"> developer',
-//     'late-night <span style="color:purple;" >gamer</span>',
-//     '<span style="color:purple;" >master</span> home chef'
-// 	],
-//   count: 1,
-//   changeTitle: function() {
-//     var title = "<p id='title-text'>" + this.titles[this.count] + "</p>";
-//     this.count++;
-//     if (this.count >= this.titles.length) {
-//       this.count = 0;
-//     }
-
-//     $('#title-text').fadeOut(300, function() {
-//       var t = $(title).hide();
-//       $(this).replaceWith(t);
-//       $('#title-text').fadeIn(300);
-//     });
-
-//   }
-// };
-
-// var handlers = {
-// 	changeTitle: function() {
-// 		TitleChanger.changeTitle();
-// 	}
-// };

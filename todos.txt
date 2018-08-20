@@ -1,17 +1,6 @@
-- change color scheme, no more purple
-- update all text content
-- update cover photo
-- either find a better resolution conestoga logo, or make your own
-- use higher resolution pictures for the links, and/or make them smaller
-- update profile2 photo to something goofier
-- update projects:
-  - remove oneShare-web and sAudio
-  - add Corbii, link to splash page for now
-- make it even more mobile-responsive
-- update resumé
-- add accent to resumé header
-- make nav links move to more correct places
-- change the font:
-    - Montserrat light
-    - Muli light
-    - Josefin Sans light
+updates:
+- compress everything
+
+fixes:
+- resolve "outdated ip address" issue in github repo settings
+- resolve no https
