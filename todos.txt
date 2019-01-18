@@ -1,6 +1,2 @@
 updates:
 - compress everything
-
-fixes:
-- resolve "outdated ip address" issue in github repo settings
-- resolve no https
