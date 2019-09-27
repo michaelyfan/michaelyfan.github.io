@@ -213,6 +213,9 @@ hr {
   border: 1px solid #f0f0f0;
   position: relative;
   margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -222,23 +225,23 @@ hr {
   }
 }
 #project-link-1 {
-  background: url("../images/projects/corbii.jpg") no-repeat center center;
-  background-size: cover;
+  background-image: url("../images/projects/corbii.jpg");
 }
 
 #project-link-2 {
-  background: url("../images/projects/isitorange.png") no-repeat center center;
-  background-size: cover;
+  background-image: url("../images/projects/isitorange.png");
 }
 
 #project-link-3 {
-  background: url("../images/projects/electric-field-sim.png") no-repeat center center;
-  background-size: cover;
+  background-image: url("../images/projects/cosai.jpg");
 }
 
 #project-link-4 {
-  background: url("../images/projects/leash.png") no-repeat center center;
-  background-size: cover;
+  background-image: url("../images/projects/electric-field-sim.png");
+}
+
+#project-link-5 {
+  background-image: url("../images/projects/leash.png");
 }
 
 .overlay {
@@ -261,6 +264,10 @@ hr {
 
 .overlay:hover {
   opacity: 1;
+}
+
+.project-text-wrapper {
+  width: 90%;
 }
 
 .project-title {
@@ -338,18 +345,37 @@ hr {
   transition: 0.2s;
 }
 
-#bottombar-section {
-  height: 30px;
-  font-size: 16px;
-  font-style: italic;
+#footer {
+  font-size: 18px;
   color: white;
   background-color: #343434;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#footer a {
+  font-size: 26px;
+  margin-left: 5px;
+}
+
+#footer a:hover {
+  cursor: pointer;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #272727;
 }
 
 /*# sourceMappingURL=index.scss.map */
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=css/index.css.map */

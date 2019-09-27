@@ -1,15 +1,17 @@
 $fontStackBackup: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 $fontStackTitle: "Josefin Sans", $fontStackBackup;
 $fontStack: "Josefin Sans", $fontStackBackup;
-$accentColor: #343434;
-$subAccentColor: #144bab;
+$accentColor: #343434; // dark gray
+$subAccentColor: #144bab; // darkish blue
 
 $coverImage: url("../images/cover.jpg");
 $coverImageSmall: url("../images/cover-half.jpg");
 $corbiiImage: url("../images/projects/corbii.jpg");
+$orangeImage: url("../images/projects/isitorange.png");
+$cosaiImage: url("../images/projects/cosai.jpg");
 $electricFieldSimImage: url("../images/projects/electric-field-sim.png");
 $leashImage: url("../images/projects/leash.png");
-$thoughtsImage: url("../images/projects/isitorange.png");
+
 
 $fontWeightLight: 300;
 $fontWeight: 400;
@@ -236,6 +238,9 @@ hr {
   border: 1px solid #f0f0f0;
   position: relative;
   margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -246,23 +251,23 @@ hr {
 }
 
 #project-link-1 {
-  background: $corbiiImage no-repeat center center;
-  background-size: cover;
+  background-image: $corbiiImage
 }
 
 #project-link-2 {
-  background: $thoughtsImage no-repeat center center;
-  background-size: cover;
+  background-image: $orangeImage;
 }
 
 #project-link-3 {
-  background: $electricFieldSimImage no-repeat center center;
-  background-size: cover;
+  background-image: $cosaiImage;
 }
 
 #project-link-4 {
-  background: $leashImage no-repeat center center;
-  background-size: cover;
+  background-image: $electricFieldSimImage;
+}
+
+#project-link-5 {
+  background-image: $leashImage;
 }
 
 .overlay {
@@ -286,6 +291,10 @@ hr {
 
 .overlay:hover {
   opacity: 1;
+}
+
+.project-text-wrapper {
+  width: 90%;
 }
 
 .project-title {
@@ -363,16 +372,35 @@ hr {
   transition: 0.2s;
 }
 
-#bottombar-section {
-  height: 30px;
-  font-size: 16px;
-  font-style: italic;
+#footer {
+  font-size: 18px;
   color: white;
   background-color: $accentColor;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+#footer > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#footer a {
+  font-size: 26px;
+  margin-left: 5px;
+}
+
+#footer a:hover {
+  cursor: pointer;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: darken($accentColor, 5%);
 }
 
 /*# sourceMappingURL=index.scss.map */
