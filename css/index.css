@@ -364,6 +364,8 @@ hr {
 #footer a {
   font-size: 26px;
   margin-left: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 #footer a:hover {
@@ -373,7 +375,7 @@ hr {
   -moz-transition: 0.1s;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  color: #272727;
+  color: #144bab;
 }
 
 /*# sourceMappingURL=index.scss.map */
