@@ -6,8 +6,9 @@ $subAccentColor: #144bab; // darkish blue
 
 $coverImage: url("../images/cover.jpg");
 $coverImageSmall: url("../images/cover-half.jpg");
+$claireImage: url("../images/projects/claire.png");
 $corbiiImage: url("../images/projects/corbii.jpg");
-$orangeImage: url("../images/projects/isitorange.png");
+$isItOrangeImage: url("../images/projects/isitorange.png");
 $cosaiImage: url("../images/projects/cosai.jpg");
 $electricFieldSimImage: url("../images/projects/electric-field-sim.png");
 $leashImage: url("../images/projects/leash.png");
@@ -91,6 +92,20 @@ hr {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  #header-section {
+    background-image: $coverImageSmall;
+  }
+
+  #header-content-wrapper {
+    justify-content: flex-end;
+  }
+
+  #header-text {
+    margin-bottom: 15vh;
+  }
+}
+
 #title-subtext {
   color: white;
   font-size: 25px;
@@ -172,13 +187,20 @@ hr {
 }
 
 .about-img {
-  height: 250px;
-  width: auto;
+  height: auto;
+  width: 375px;
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .about-img {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 #about-info {
-  font-size: 22px;
+  font-size: 21px;
   margin: 20px;
 }
 
@@ -250,23 +272,27 @@ hr {
   }
 }
 
-#project-link-1 {
+#project-link-claire {
+  background-image: $claireImage
+}
+
+#project-link-corbii {
   background-image: $corbiiImage
 }
 
-#project-link-2 {
-  background-image: $orangeImage;
+#project-link-isItOrange {
+  background-image: $isItOrangeImage;
 }
 
-#project-link-3 {
+#project-link-cosai {
   background-image: $cosaiImage;
 }
 
-#project-link-4 {
+#project-link-electricFieldSim {
   background-image: $electricFieldSimImage;
 }
 
-#project-link-5 {
+#project-link-leash {
   background-image: $leashImage;
 }
 
