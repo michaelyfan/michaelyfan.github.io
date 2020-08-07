@@ -1,7 +1,0 @@
-updates:
-- place your name down when in mobile mode
-- change about to include incoming Expedia internship, and change Itential description (you no longer work there).
-- place education under projects, and remove conestoga
-  - update navbar with this change
-- add Claire to projects
-- order projects chronologically
