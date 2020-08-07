@@ -243,6 +243,10 @@ hr {
     height: 300px;
   }
 }
+#project-link-dsc {
+  background-image: url("../images/projects/dsc.png");
+}
+
 #project-link-claire {
   background-image: url("../images/projects/claire.png");
 }
