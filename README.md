@@ -4,4 +4,4 @@
 * address https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fmichaelfan.me
 * address https://www.whoishostingthis.com/resources/website-accessibility/
 * fully check browser compatibility--so far verified on all moderns
-* consider project desc overlay showing up automatically on mobile
+* project desc overlay on mobile is weird
