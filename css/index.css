@@ -70,6 +70,16 @@ hr {
   text-align: center;
 }
 
+#header-text mark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#title-text mark {
+  display: inline-block;
+  height: 0.8em;
+}
+
 @media only screen and (max-width: 600px) {
   #header-section {
     background-image: url("../images/cover-half.jpg");
@@ -169,8 +179,9 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .about-img {
-    margin-left: 15px;
-    margin-right: 15px;
+    height: auto;
+    max-width: 375px;
+    width: 90%;
   }
 }
 #about-info {
