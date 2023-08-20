@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 // Sticky navbar
-var navbar = $(".nav");
+var navbar = $("#nav");
 var stickyClass = "nav-sticky";
 
 $(window).scroll(function() {
