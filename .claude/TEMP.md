@@ -1,4 +1,4 @@
-
+This is a prompt for Claude to turn the design into a product.
 
 - mobile responsiveness -- see reference 
 - keyboard navigation 
