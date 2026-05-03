@@ -5,6 +5,7 @@
 * address accessibility testing ex. https://www.whoishostingthis.com/resources/website-accessibility/
 * fully check browser compatibility--so far verified on all moderns. 
 * project desc overlay on mobile is weird
-* implement ethical analytics
+* implement ethical analytics. Comply with GDPR?
 * optimize image load time
 * new project - Runway
+* licensing thing at the bottom. 
