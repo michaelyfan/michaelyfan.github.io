@@ -1,217 +1,453 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>michael fan</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,400;1,8..144,500&family=Roboto:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+  <div class="app" data-route="main">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <aside class="sidebar" aria-label="primary">
+      <div class="sidebar-inner">
+        <a class="brand" href="#about" data-nav="about">
+          <span class="brand-michael">MICHAEL</span>
+          <span class="brand-fan">FAN</span>
+        </a>
 
-    <!-- JQuery CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about" data-nav="about" class="active">about</a></li>
+            <li><a href="#projects" data-nav="projects">projects</a></li>
+            <li><a href="#work" data-nav="work">work</a></li>
+            <li><a href="#education" data-nav="education">education</a></li>
+            <li><a href="#contact" data-nav="contact">contact</a></li>
+            <li><a href="#resume" data-nav="resume">résumé</a></li>
+          </ul>
 
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/b0cd341ce0.js" crossorigin="anonymous"></script>
+          <div class="nav-divider" aria-hidden="true"></div>
 
-    <!-- favicon link -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,700" rel="stylesheet">
+          <a href="#extras" class="nav-extras" data-nav="extras">extras</a>
+        </nav>
 
-    <!-- CSS link -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+        <button class="theme-toggle" type="button" aria-label="toggle theme">
+          <span class="theme-dot" data-on="false"></span>
+          <span class="theme-label">night</span>
+        </button>
+      </div>
+      <div class="sidebar-rule" aria-hidden="true"></div>
+    </aside>
 
-    <title>Michael Fan</title>
-
-  </head>
-
-  <body>
-
-    <div id='header-section'>
-      <div id='header-content-wrapper'>
-        <div id='header-text'>
-          <p id='title-subtext'><mark>Hi, I'm</mark></p>
-          <p id='title-text'><mark>MICHAEL FAN</mark></p>
-        </div>
+    <div class="mobilebar">
+      <div class="mobilebar-top">
+        <a class="brand" href="#about" data-nav="about">
+          <span class="brand-michael">MICHAEL</span>
+          <span class="brand-fan">FAN</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false">menu</button>
+      </div>
+      <div class="mobilebar-panel">
+        <ul>
+          <li><a href="#about" data-nav="about" class="active">about</a></li>
+          <li><a href="#projects" data-nav="projects">projects</a></li>
+          <li><a href="#work" data-nav="work">work</a></li>
+          <li><a href="#education" data-nav="education">education</a></li>
+          <li><a href="#contact" data-nav="contact">contact</a></li>
+          <li><a href="#resume" data-nav="resume">résumé</a></li>
+          <li class="dashed" aria-hidden="true"></li>
+          <li><a href="#extras" class="nav-extras" data-nav="extras">extras</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="toggle theme">
+          <span class="theme-dot" data-on="false"></span>
+          <span class="theme-label">night</span>
+        </button>
       </div>
     </div>
 
-    <div class='nav' data-nosnippet>
-      <a class='nav-link' href='#about-section'>about</a>
-      <a class='nav-link' href='#projects-section'>projects</a>
-      <a class='nav-link' href='#education-section'>education</a>
-      <a class='nav-link' href='#resume-section'>résumé</a>
-    </div>
+    <main class="main">
 
+      <section id="hero" class="hero">
+        <h1 class="hero-name">hi, i'm <em>Michael</em> Fan</h1>
+        <p class="hero-tagline">
+          software developer at expedia group, writing code to take you on your next vacation. i build with javascript, node, and java — and learn whatever stack the job needs.
+        </p>
+      </section>
 
-    <div id='about-section' class='section'>
-      <div id='about-content-wrapper'>
-        <div data-nosnippet>
-          <h1 class='section-header'>
-            about
-          </h1>
-        </div>
-        <div id='about-info-wrapper'>
-          <img class='about-img' src='images/profile2.jpg'>
-          <p id='about-info'>
-            Hello. I'm a software developer at <a class='accent-link' href='https://www.expediagroup.com/' target='_blank'>Expedia Group</a>, writing code to take you on your next vacation. I currently specialize in JavaScript, Node, and Java, but I'll learn whatever stack I need to get the job done. 
-            <br/><br/>
-            I graduated in computer science from the <a class='accent-link' href='https://www.cc.gatech.edu/' target='_blank'>Georgia Institute of Technology</a>. In school, I was an intern with Expedia's homepage team. I also did a software dev co-op with the network automation rockstars at <a class='accent-link' href='https://www.itential.com/' target='_blank'>Itential</a>.  
-            <br /><br />
-            Outside of corporate, I like exercise, gridiron, and I think I can bake profiteroles as good as your nearest patisserie's.  
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div id='projects-section' class='section'>
-      <div id='projects-content-wrapper'>
-        <h1 class='section-header'>
-          projects
-        </h1>
-        <div id='projects-grid-wrapper'>
-          
-          <a href='https://github.com/dscgt/recycling_website' target='_blank'>
-            <div class='project-link' id='project-link-dsc'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>GT Green</p>
-                  <p class='project-role'>PROJECT LEAD</p>
-                  <p class='project-description'>apps for GT Recycling, by the Developer Student Club</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://corbii-web.web.app/' target='_blank'>
-            <div class='project-link' id='project-link-corbii'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Corbii</p>
-                  <p class='project-role'>CO-FOUNDER, DEVELOPER</p>
-                  <p class='project-description'>learning as smart as you</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://devpost.com/software/claire-x0uz64' target='_blank'>
-            <div class='project-link' id='project-link-claire'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Claire</p>
-                  <p class='project-role'>DEVELOPER</p>
-                  <p class='project-description'>love at first write</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          
-          <a href='http://isitorange.surge.sh/' target='_blank'>
-            <div class='project-link' id='project-link-isItOrange'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Is It Orange</p>
-                  <p class='project-role'>DEVELOPER</p>
-                  <p class='project-description'>&#127818;</p> <!-- Code for orange emoji -->
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://devpost.com/software/cosai' target='_blank'>
-            <div class='project-link' id='project-link-cosai'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Cosai</p>
-                  <p class='project-role'>DEVELOPER</p>
-                  <p class='project-description'>facial recognition for more efficient retail</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://devpost.com/software/leash-gctsd0' target='_blank'>
-            <div class='project-link' id='project-link-leash'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>Leash</p>
-                  <p class='project-role'>GRAPHIC DESIGNER</p>
-                  <p class='project-description'>for the ones that get away</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href='https://github.com/michaelyfan/ElectricFieldSim-Web' target='_blank'>
-            <div class='project-link' id='project-link-electricFieldSim'>
-              <div class='overlay'>
-                <div class='project-text-wrapper'>
-                  <p class='project-title'>ElectricFieldSim-Web</p>
-                  <p class='project-role'>DEVELOPER</p>
-                  <p class='project-description'>a web version of Orion-F's electric field simulator</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div id='education-section' class='section'>
-      <div id='education-content-wrapper'>
-        <h1 class='section-header'>
-          education
-        </h1>
-        <div id='schools-wrapper'>
-          <div class='school-column' id='gt-column'>
-            <a href='https://www.cc.gatech.edu/' target='_blank'>
-              <img src='images/gt.png' alt='Georgia Institute of Technology' class='school-img' />
-            </a>
-            <p>B.S. in Computer Science</p>
-            <p>2017 - 2021</p>
+      <section id="about" data-spy="about" class="block">
+        <header class="section-title">
+          <h2>about</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <div class="about-grid">
+          <div class="portrait" aria-hidden="true">
+            <svg class="stripes" viewBox="0 0 100 120" preserveAspectRatio="none">
+              <defs>
+                <pattern id="diag-p" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+                  <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+                </pattern>
+              </defs>
+              <rect width="100" height="120" fill="url(#diag-p)"/>
+            </svg>
+            <img src="images/profile2.jpg" alt="" />
+          </div>
+          <div class="prose">
+            <p>
+              hello — i'm a software developer at <em>expedia group</em>, writing code to take you on your next vacation. i specialize in javascript, node, and java, but i'll learn whatever stack i need to get the job done.
+            </p>
+            <p>
+              i graduated in computer science from the <em>georgia institute of technology</em>. in school, i was an intern with expedia's homepage team. i also did a software dev co-op with the network automation rockstars at itential.
+            </p>
+            <p>
+              outside of corporate, i like exercise, gridiron, and i think i can bake <em>profiteroles</em> as good as your nearest patisserie's.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <hr>
+      <section id="projects" data-spy="projects" class="block">
+        <header class="section-title">
+          <h2>projects</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <p class="block-lede">
+          a handful of things i've worked on — student-club builds, hackathon weekends, and the occasional small experiment.
+        </p>
+        <div class="projects-grid">
 
-    <div id='resume-section' class='section'>
-      <div id='resume-content-wrapper'>
-        <h1 class='section-header'>
-          résumé
-        </h1>
-        <div id='resume-frame-wrapper'>
-          <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" width="640" height="480"></iframe>
+          <article class="project" style="--offset: 0px;">
+            <a class="project-frame" href="https://github.com/dscgt/recycling_website" target="_blank" rel="noopener" aria-label="GT Green">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d1" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d1)"/>
+              </svg>
+              <span class="project-glyph">G</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">GT Green</span>
+                <span class="project-year">project lead</span>
+              </h3>
+              <p>apps for GT recycling, by the developer student club.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li><li>dolor</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 28px;">
+            <a class="project-frame" href="https://corbii-web.web.app/" target="_blank" rel="noopener" aria-label="Corbii">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d2" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d2)"/>
+              </svg>
+              <span class="project-glyph">C</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">Corbii</span>
+                <span class="project-year">co-founder</span>
+              </h3>
+              <p>learning as smart as you.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 0px;">
+            <a class="project-frame" href="https://devpost.com/software/claire-x0uz64" target="_blank" rel="noopener" aria-label="Claire">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d3" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d3)"/>
+              </svg>
+              <span class="project-glyph">C</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">Claire</span>
+                <span class="project-year">developer</span>
+              </h3>
+              <p>love at first write.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li><li>amet</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 28px;">
+            <a class="project-frame" href="http://isitorange.surge.sh/" target="_blank" rel="noopener" aria-label="Is It Orange">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d4" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d4)"/>
+              </svg>
+              <span class="project-glyph">I</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">Is It Orange</span>
+                <span class="project-year">developer</span>
+              </h3>
+              <p>🍊</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 0px;">
+            <a class="project-frame" href="https://devpost.com/software/cosai" target="_blank" rel="noopener" aria-label="Cosai">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d5" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d5)"/>
+              </svg>
+              <span class="project-glyph">C</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">Cosai</span>
+                <span class="project-year">developer</span>
+              </h3>
+              <p>facial recognition for more efficient retail.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 28px;">
+            <a class="project-frame" href="https://devpost.com/software/leash-gctsd0" target="_blank" rel="noopener" aria-label="Leash">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d6" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d6)"/>
+              </svg>
+              <span class="project-glyph">L</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">Leash</span>
+                <span class="project-year">graphic designer</span>
+              </h3>
+              <p>for the ones that get away.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 0px;">
+            <a class="project-frame" href="https://github.com/michaelyfan/ElectricFieldSim-Web" target="_blank" rel="noopener" aria-label="ElectricFieldSim-Web">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d7" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d7)"/>
+              </svg>
+              <span class="project-glyph">E</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">ElectricFieldSim-Web</span>
+                <span class="project-year">developer</span>
+              </h3>
+              <p>a web version of orion-f's electric field simulator.</p>
+              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+            </div>
+          </article>
+
         </div>
-        <p id='resume-alt'><a href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target='_blank'>Download</a></p>
-      </div>
-    </div>
+      </section>
 
-    <div id='footer'>
-      <div>
-        Michael Fan
-      </div>
-      <div>
-        <a href='https://www.linkedin.com/in/michael-fan-a0a0b1143' target='_blank'>
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href='https://github.com/michaelyfan' target='_blank'>
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
+      <section id="work" data-spy="work" class="block">
+        <header class="section-title">
+          <h2>work</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-period">lorem — ipsum</div>
+            <div class="work-rule" aria-hidden="true"></div>
+            <h3 class="work-role">lorem ipsum, <em class="work-company">dolor sit amet</em></h3>
+            <ul class="work-notes">
+              <li>— lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</li>
+              <li>— ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>— duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+            </ul>
+          </article>
+          <article class="work-item">
+            <div class="work-period">lorem — ipsum</div>
+            <div class="work-rule" aria-hidden="true"></div>
+            <h3 class="work-role">consectetur adipiscing, <em class="work-company">elit sed do</em></h3>
+            <ul class="work-notes">
+              <li>— excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+              <li>— sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
+      <section id="education" data-spy="education" class="block">
+        <header class="section-title">
+          <h2>education</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <div class="edu-list">
+          <div class="edu-row">
+            <div class="edu-period">2017 — 2021</div>
+            <div class="edu-body">B.S. computer science, <em>georgia institute of technology</em>.</div>
+          </div>
+        </div>
+      </section>
 
-    <script src="js/index.js"></script>
-  </body>
+      <section id="contact" data-spy="contact" class="block">
+        <header class="section-title">
+          <h2>contact</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <div class="contact-grid">
+          <div class="prose">
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. send a note about anything — work, weird side ideas, or just to say hello.</p>
+            <p class="ink-mute">currently: lorem ipsum dolor sit amet.</p>
+          </div>
+          <ul class="channels">
+            <li>
+              <a href="mailto:michaelyfan100@gmail.com">
+                <span class="channel-label">email</span>
+                <span class="channel-value">michaelyfan100@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/michaelyfan" target="_blank" rel="noopener">
+                <span class="channel-label">github</span>
+                <span class="channel-value">github.com/michaelyfan</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/michael-fan-a0a0b1143" target="_blank" rel="noopener">
+                <span class="channel-label">linkedin</span>
+                <span class="channel-value">linkedin.com/in/michael-fan</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section id="resume" data-spy="resume" class="block">
+        <header class="section-title">
+          <h2>résumé</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <div class="resume-grid">
+          <article class="resume-doc">
+            <header class="resume-doc-head">
+              <span class="resume-doc-title">michael_fan.pdf</span>
+              <span class="resume-doc-meta">live preview</span>
+            </header>
+            <div class="resume-iframe-wrap">
+              <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" title="résumé preview"></iframe>
+            </div>
+          </article>
+          <div class="resume-cta">
+            <a class="btn" href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target="_blank" rel="noopener">
+              <span>open / download</span>
+              <span class="arrow">↓</span>
+            </a>
+            <p class="ink-soft">
+              or — write to <a class="inline-link" href="mailto:michaelyfan100@gmail.com">michaelyfan100@gmail.com</a> if you'd like a copy tailored for the role you have in mind.
+            </p>
+            <p class="fineprint">lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="thanks">thanks for reading.</p>
+        <p class="fineprint">© <span id="footer-year">2026</span> michael fan · set in roboto serif &amp; jetbrains mono · no analytics, no cookies, no nonsense</p>
+      </footer>
+
+    </main>
+
+    <main class="extras">
+      <a class="back-link" href="#about" data-nav="about">← back to the main page</a>
+      <header class="extras-hero">
+        <h1>a small <em>scrap drawer</em>.</h1>
+        <p class="extras-lede">
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. things that don't earn their own page yet — placeholders for now.
+        </p>
+      </header>
+
+      <section class="extras-block">
+        <header class="section-title">
+          <h2>currently reading</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <ul class="reading">
+          <li><span class="mono-meta">tbd</span> <em>lorem ipsum</em> — placeholder author</li>
+          <li><span class="mono-meta">tbd</span> <em>dolor sit amet</em> — placeholder author</li>
+        </ul>
+      </section>
+
+      <section class="extras-block">
+        <header class="section-title">
+          <h2>writing</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <ul class="writing">
+          <li><span class="mono-meta">tbd</span> <a href="#">lorem ipsum dolor sit amet</a> <span class="ink-mute">— placeholder.</span></li>
+        </ul>
+      </section>
+
+      <section class="extras-block">
+        <header class="section-title">
+          <h2>what i use</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <dl class="kit">
+          <div><dt>editor</dt><dd>lorem ipsum</dd></div>
+          <div><dt>terminal</dt><dd>dolor sit amet</dd></div>
+          <div><dt>browser</dt><dd>consectetur adipiscing</dd></div>
+        </dl>
+      </section>
+
+      <section class="extras-block">
+        <header class="section-title">
+          <h2>elsewhere on the web</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <ul class="elsewhere">
+          <li><a href="https://github.com/michaelyfan" target="_blank" rel="noopener">github</a> — half-finished side quests</li>
+          <li><a href="https://www.linkedin.com/in/michael-fan-a0a0b1143" target="_blank" rel="noopener">linkedin</a> — the formal version</li>
+        </ul>
+      </section>
+
+      <section class="extras-block guestbook">
+        <header class="section-title">
+          <h2>guestbook</h2>
+          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </header>
+        <blockquote>
+          "<em>lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>"
+          <cite>— placeholder</cite>
+        </blockquote>
+      </section>
+
+      <a class="back-link bottom" href="#about" data-nav="about">← back to the main page</a>
+    </main>
+
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
 </html>
