@@ -12,10 +12,7 @@
     root.dataset.theme = theme;
     try { localStorage.setItem('mf-theme', theme); } catch (e) {}
     themeToggles.forEach(btn => {
-      const dot = btn.querySelector('.theme-dot');
-      const label = btn.querySelector('.theme-label');
-      if (dot) dot.dataset.on = theme === 'dark' ? 'true' : 'false';
-      if (label) label.textContent = theme === 'dark' ? 'day' : 'night';
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
     });
   }
   let initialTheme = 'light';
@@ -62,6 +59,9 @@
     const top = el.getBoundingClientRect().top + window.scrollY - 40;
     window.scrollTo({ top, behavior: 'smooth' });
   }
+  function gotoTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   navLinks.forEach(a => {
     a.addEventListener('click', (e) => {
       const target = a.dataset.nav;
@@ -71,14 +71,18 @@
       }
       e.preventDefault();
       closeMenu();
+      const goAfterRoute = () => {
+        if (target === 'top') gotoTop();
+        else gotoSection(target);
+      };
       if (app.dataset.route === 'extras') {
         if (window.location.hash === '#extras') {
           history.replaceState(null, '', window.location.pathname + window.location.search);
         }
         setRoute('main');
-        requestAnimationFrame(() => gotoSection(target));
+        requestAnimationFrame(goAfterRoute);
       } else {
-        gotoSection(target);
+        goAfterRoute();
       }
     });
   });

@@ -1,8 +1,5 @@
-This is a prompt for Claude to turn the design into a product.
-
 - mobile responsiveness -- see reference 
 - keyboard navigation 
-
 - Real portrait photo (currently a striped frame placeholder)
 - Real project thumbnails (currently SVG iconographic placeholders)
 - Real bio copy (current text is plausible filler)

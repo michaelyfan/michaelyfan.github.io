@@ -4,10 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>michael fan</title>
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,400;1,8..144,500&family=Roboto:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,400;1,8..144,500&family=Roboto:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
@@ -15,9 +16,9 @@
 
     <aside class="sidebar" aria-label="primary">
       <div class="sidebar-inner">
-        <a class="brand" href="#about" data-nav="about">
-          <span class="brand-michael">MICHAEL</span>
-          <span class="brand-fan">FAN</span>
+        <a class="brand" href="#" data-nav="top">
+          <span class="brand-michael">michael</span>
+          <span class="brand-fan">fan</span>
         </a>
 
         <nav class="nav">
@@ -35,9 +36,21 @@
           <a href="#extras" class="nav-extras" data-nav="extras">extras</a>
         </nav>
 
-        <button class="theme-toggle" type="button" aria-label="toggle theme">
-          <span class="theme-dot" data-on="false"></span>
-          <span class="theme-label">night</span>
+        <button class="theme-toggle" type="button" aria-label="toggle theme" aria-pressed="false">
+          <span class="theme-pill" aria-hidden="true">
+            <span class="theme-icon theme-icon-sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="theme-icon theme-icon-moon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </span>
+            <span class="theme-pill-knob"></span>
+          </span>
         </button>
       </div>
       <div class="sidebar-rule" aria-hidden="true"></div>
@@ -45,9 +58,9 @@
 
     <div class="mobilebar">
       <div class="mobilebar-top">
-        <a class="brand" href="#about" data-nav="about">
-          <span class="brand-michael">MICHAEL</span>
-          <span class="brand-fan">FAN</span>
+        <a class="brand" href="#" data-nav="top">
+          <span class="brand-michael">michael</span>
+          <span class="brand-fan">fan</span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false">menu</button>
       </div>
@@ -62,9 +75,21 @@
           <li class="dashed" aria-hidden="true"></li>
           <li><a href="#extras" class="nav-extras" data-nav="extras">extras</a></li>
         </ul>
-        <button class="theme-toggle" type="button" aria-label="toggle theme">
-          <span class="theme-dot" data-on="false"></span>
-          <span class="theme-label">night</span>
+        <button class="theme-toggle" type="button" aria-label="toggle theme" aria-pressed="false">
+          <span class="theme-pill" aria-hidden="true">
+            <span class="theme-icon theme-icon-sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="theme-icon theme-icon-moon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </span>
+            <span class="theme-pill-knob"></span>
+          </span>
         </button>
       </div>
     </div>
@@ -72,18 +97,15 @@
     <main class="main">
 
       <section id="hero" class="hero">
-        <h1 class="hero-name">hi, i'm <em>Michael</em> Fan</h1>
+        <h1 class="hero-name">hi, i'm <em>michael</em> fan</h1>
         <p class="hero-tagline">
-          software developer at expedia group, writing code to take you on your next vacation. i build with javascript, node, and java — and learn whatever stack the job needs.
+          software developer at Expedia Group, writing code to take you on your next vacation. i build with javascript, node, and java; whatever stack the job needs, i'll learn it.
         </p>
       </section>
 
       <section id="about" data-spy="about" class="block">
         <header class="section-title">
           <h2>about</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <div class="about-grid">
           <div class="portrait" aria-hidden="true">
@@ -99,10 +121,10 @@
           </div>
           <div class="prose">
             <p>
-              hello — i'm a software developer at <em>expedia group</em>, writing code to take you on your next vacation. i specialize in javascript, node, and java, but i'll learn whatever stack i need to get the job done.
+              hello. i'm a software developer at <em>Expedia Group</em>, writing code to take you on your next vacation. i specialize in javascript, node, and java, but i'll learn whatever stack i need to get the job done.
             </p>
             <p>
-              i graduated in computer science from the <em>georgia institute of technology</em>. in school, i was an intern with expedia's homepage team. i also did a software dev co-op with the network automation rockstars at itential.
+              i graduated in computer science from the <em>Georgia Institute of Technology</em>. in school, i was an intern with Expedia's homepage team. i also did a software dev co-op with the network automation rockstars at Itential.
             </p>
             <p>
               outside of corporate, i like exercise, gridiron, and i think i can bake <em>profiteroles</em> as good as your nearest patisserie's.
@@ -114,12 +136,9 @@
       <section id="projects" data-spy="projects" class="block">
         <header class="section-title">
           <h2>projects</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <p class="block-lede">
-          a handful of things i've worked on — student-club builds, hackathon weekends, and the occasional small experiment.
+          a handful of things i've worked on: student-club builds, hackathon weekends, and the occasional small experiment.
         </p>
         <div class="projects-grid">
 
@@ -255,28 +274,25 @@
       <section id="work" data-spy="work" class="block">
         <header class="section-title">
           <h2>work</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <div class="work-list">
           <article class="work-item">
-            <div class="work-period">lorem — ipsum</div>
+            <div class="work-period">lorem–ipsum</div>
             <div class="work-rule" aria-hidden="true"></div>
             <h3 class="work-role">lorem ipsum, <em class="work-company">dolor sit amet</em></h3>
             <ul class="work-notes">
-              <li>— lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</li>
-              <li>— ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li>— duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+              <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</li>
+              <li>ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
             </ul>
           </article>
           <article class="work-item">
-            <div class="work-period">lorem — ipsum</div>
+            <div class="work-period">lorem–ipsum</div>
             <div class="work-rule" aria-hidden="true"></div>
             <h3 class="work-role">consectetur adipiscing, <em class="work-company">elit sed do</em></h3>
             <ul class="work-notes">
-              <li>— excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-              <li>— sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
+              <li>excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+              <li>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
             </ul>
           </article>
         </div>
@@ -285,14 +301,11 @@
       <section id="education" data-spy="education" class="block">
         <header class="section-title">
           <h2>education</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <div class="edu-list">
           <div class="edu-row">
-            <div class="edu-period">2017 — 2021</div>
-            <div class="edu-body">B.S. computer science, <em>georgia institute of technology</em>.</div>
+            <div class="edu-period">2017–2021</div>
+            <div class="edu-body">B.S. computer science, <em>Georgia Institute of Technology</em>.</div>
           </div>
         </div>
       </section>
@@ -300,13 +313,10 @@
       <section id="contact" data-spy="contact" class="block">
         <header class="section-title">
           <h2>contact</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <div class="contact-grid">
           <div class="prose">
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. send a note about anything — work, weird side ideas, or just to say hello.</p>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. send a note about anything: work, weird side ideas, or just to say hello.</p>
             <p class="ink-mute">currently: lorem ipsum dolor sit amet.</p>
           </div>
           <ul class="channels">
@@ -335,9 +345,6 @@
       <section id="resume" data-spy="resume" class="block">
         <header class="section-title">
           <h2>résumé</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <div class="resume-grid">
           <article class="resume-doc">
@@ -355,7 +362,7 @@
               <span class="arrow">↓</span>
             </a>
             <p class="ink-soft">
-              or — write to <a class="inline-link" href="mailto:michaelyfan100@gmail.com">michaelyfan100@gmail.com</a> if you'd like a copy tailored for the role you have in mind.
+              prefer something tailored to the role you have in mind? write to <a class="inline-link" href="mailto:michaelyfan100@gmail.com">michaelyfan100@gmail.com</a> and i'll send a fresh copy.
             </p>
             <p class="fineprint">lorem ipsum dolor sit amet</p>
           </div>
@@ -364,7 +371,7 @@
 
       <footer class="footer">
         <p class="thanks">thanks for reading.</p>
-        <p class="fineprint">© <span id="footer-year">2026</span> michael fan · set in roboto serif &amp; jetbrains mono · no analytics, no cookies, no nonsense</p>
+        <p class="fineprint">© <span id="footer-year">2026</span> michael fan · set in roboto serif &amp; roboto mono · no analytics, no cookies, no nonsense</p>
       </footer>
 
     </main>
@@ -374,41 +381,32 @@
       <header class="extras-hero">
         <h1>a small <em>scrap drawer</em>.</h1>
         <p class="extras-lede">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. things that don't earn their own page yet — placeholders for now.
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. things that don't earn their own page yet; placeholders for now.
         </p>
       </header>
 
       <section class="extras-block">
         <header class="section-title">
           <h2>currently reading</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <ul class="reading">
-          <li><span class="mono-meta">tbd</span> <em>lorem ipsum</em> — placeholder author</li>
-          <li><span class="mono-meta">tbd</span> <em>dolor sit amet</em> — placeholder author</li>
+          <li><span class="mono-meta">tbd</span> <em>lorem ipsum</em>, placeholder author</li>
+          <li><span class="mono-meta">tbd</span> <em>dolor sit amet</em>, placeholder author</li>
         </ul>
       </section>
 
       <section class="extras-block">
         <header class="section-title">
           <h2>writing</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <ul class="writing">
-          <li><span class="mono-meta">tbd</span> <a href="#">lorem ipsum dolor sit amet</a> <span class="ink-mute">— placeholder.</span></li>
+          <li><span class="mono-meta">tbd</span> <a href="#">lorem ipsum dolor sit amet</a> <span class="ink-mute">(placeholder).</span></li>
         </ul>
       </section>
 
       <section class="extras-block">
         <header class="section-title">
           <h2>what i use</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <dl class="kit">
           <div><dt>editor</dt><dd>lorem ipsum</dd></div>
@@ -420,26 +418,20 @@
       <section class="extras-block">
         <header class="section-title">
           <h2>elsewhere on the web</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <ul class="elsewhere">
-          <li><a href="https://github.com/michaelyfan" target="_blank" rel="noopener">github</a> — half-finished side quests</li>
-          <li><a href="https://www.linkedin.com/in/michael-fan-a0a0b1143" target="_blank" rel="noopener">linkedin</a> — the formal version</li>
+          <li><a href="https://github.com/michaelyfan" target="_blank" rel="noopener">github</a>: half-finished side quests</li>
+          <li><a href="https://www.linkedin.com/in/michael-fan-a0a0b1143" target="_blank" rel="noopener">linkedin</a>: the formal version</li>
         </ul>
       </section>
 
       <section class="extras-block guestbook">
         <header class="section-title">
           <h2>guestbook</h2>
-          <svg class="hand-underline" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 6 C 30 2, 60 9, 95 5 S 160 3, 198 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
         </header>
         <blockquote>
           "<em>lorem ipsum dolor sit amet, consectetur adipiscing elit.</em>"
-          <cite>— placeholder</cite>
+          <cite>placeholder</cite>
         </blockquote>
       </section>
 
