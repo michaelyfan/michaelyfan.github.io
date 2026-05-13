@@ -1,11 +1,17 @@
-
 # Content Improvements
 
-## Change "hi, i'm michael fan"
+- [ ] update top heading to "hi, i'm michael fan", and update hero content (see below)
+- [ ] update about section (see below)
+- [ ] update work history section (see below)
+- [ ] update projects section (see below)
+- [ ] update education section (see below)
+- [ ] update resume section: The name of the file is MichaelFan_Resume.pdf and remove "LIVE PREVIEW". TODO -- make a decision about columns
+- [ ] update footer: remove "no analytics, no cookies, no nonsense"
 
-Self-explanatory.
+--- 
 
-## The stuff under "hi, i'm michael fan" ("Hero" content)
+
+# The stuff under "hi, i'm michael fan" ("Hero" content)
 
 > software developer, <TODO: something to do with how I use AI: I think it's a great tool but I emphasize guardrails and intentionality>, <TODO: something to do with cooking or baking, hobbies I very much enjoy. bonus if you can include the word "developer">, very serious about breakfast. 
 
@@ -33,29 +39,33 @@ Self-explanatory.
 
 <The work history section under .claude/CONTENT_SUGGESTIONS.md is pretty good, but:
 
-- note, in small text at the top, that the
+- note, in small text at the top, that the sweaty metrics for impact are on my resume.  (find a better way to word this.)
+- This section is a more prose-like. I just want to talk about my various positions. Give a brief overview, very conversational. My experience is in /Users/mfan/dev/Career/Context.
+- mention Expedia Group, Itential, Corbii. Don't have to separate by rank. In fact, don't mention rank at all, that's for my resume.
 
+## projects section
 
->
+TODO
 
-### Below is to edit
+## education section
 
+TODO
 
-# Improvements
+# Other Improvements
 
-* stick the work section above projects. So, overall flow should be about > work > projects > education > contact > resume. Also, rename it to "work history"
-* improve the fonts used for backup, in case Google Fonts cannot load. Change them to fonts that are most likely supported natively by the user system which have the same vibe as Roboto family -- modern. Serif things should remain serif, sans-serif should remain sans, mono should remain mono.
-* the user experience should work well at mobile screen sizes -- mobile responsive.
-* the user should be able to use tab to navigate through the page.
-* (a human must do this) fix the resume PDF import
-* make sure there are no em-dashes!
+- [ ] make sure overall flow is about > work > projects > education > contact > resume. Also, rename it to "work history". also, I think this means some reordering is necessary.
+- [ ] improve the fonts used for backup, in case Google Fonts cannot load. Change them to fonts that are most likely supported natively by the user system which have the same vibe as Roboto family -- modern. Serif things should remain serif, sans-serif should remain sans, mono should remain mono.
+- [ ] the user experience should work well at mobile screen sizes -- mobile responsive.
+- [ ] the user should be able to use tab to navigate through the page.
+- [ ] (a human must do this) fix the resume PDF import
+- [ ] make sure there are no em-dashes!
+- [ ] my location (currently seattle, wa) should be on here somewhere...brainstorm with me to determine a location
+- [ ] consistent "I" casing.
+- [ ] brainstorm with me: collapse education and contact sections into about section, project section, or a split. 
+
 
 TODO FINISH BELOW THIS LINE
 
-* consistent "I" casing.
-* (a human must provide this) Real project thumbnails (currently SVG iconographic placeholders)
-* Real bio copy (current text is plausible filler)
-* Real project list, work history, education details
 * Real résumé PDF (button currently links to `#resume.pdf`)
 * Real contact handles (placeholder `/michael` paths)
 * SEO/meta tags, OG image, favicon — not yet implemented
