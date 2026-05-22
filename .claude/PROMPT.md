@@ -7,6 +7,7 @@
 - [ ] update education section (see below)
 - [ ] update resume section: The name of the file is MichaelFan_Resume.pdf and remove "LIVE PREVIEW". TODO -- make a decision about columns
 - [ ] update footer: remove "no analytics, no cookies, no nonsense"
+- [ ] all things that a human needs, or are being deferred, should be noted in README TODOs afterwards
 
 --- 
 
@@ -45,11 +46,33 @@
 
 ## projects section
 
-TODO
+- Add the projects in /Users/mfan/dev/michaelyfan.github.io/.claude/CONTENT_SUGGESTIONS.md.
+- but exclude Corbii since that's work history.
+- projects should not have dates or roles. They're just personal projects. 
+- Also include another project. It should be the most recent:
+  - called "PuntList"
+  - it's an app that lets a user either check something off or move it to another list in one tap.
+  - flutter + firebase
+- pictures must be provided by a human, don't worry about that.
 
 ## education section
 
-TODO
+keep as is
+
+## contact section
+
+Something along the lines of "if you've made it this far, maybe we could chat"
+
+remove the grayscale "currently: ..." line, doesn't do anything
+
+A human needs to verify the links
+
+## resume section
+
+- Remove "LIVE_PREVIEW"
+- a human needs to update the source
+- remove the arrow after "open / download" in the button.
+- change to "prefer something tailored to the work you have in mind? write to..."
 
 # Other Improvements
 
@@ -63,19 +86,14 @@ TODO
 - [ ] consistent "I" casing.
 - [ ] brainstorm with me: collapse education and contact sections into about section, project section, or a split. 
 
-
-TODO FINISH BELOW THIS LINE
-
-* Real résumé PDF (button currently links to `#resume.pdf`)
-* Real contact handles (placeholder `/michael` paths)
-* SEO/meta tags, OG image, favicon — not yet implemented
+Deferred
+* SEO/meta tags, OG image, favicon — not yet implemented -- defer this
 * Analytics decision (currently none, by design — confirm)
 * Domain + hosting + deploy pipeline
 * address https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fmichaelfan.me
 * address accessibility testing ex. https://www.whoishostingthis.com/resources/website-accessibility/
 * fully check browser compatibility--so far verified on all moderns. 
-* project desc overlay on mobile is weird
+* check mobile responsiveness
 * implement ethical analytics. Comply with GDPR?
 * optimize image load time
 * new project - Runway
-* licensing thing at the bottom. 
