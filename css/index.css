@@ -8,9 +8,9 @@
   --accent: #d6502d;
   --accent-soft: oklch(88% 0.05 35);
 
-  --serif: "Roboto Serif", "Iowan Old Style", Georgia, serif;
-  --sans: "Roboto", system-ui, -apple-system, "Helvetica Neue", sans-serif;
-  --mono: "Roboto Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --serif: "Roboto Serif", "Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+  --sans: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Roboto Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   --pad-y: 96px;
   --container: 1180px;

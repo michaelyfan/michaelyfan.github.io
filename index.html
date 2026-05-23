@@ -24,8 +24,8 @@
         <nav class="nav">
           <ul>
             <li><a href="#about" data-nav="about" class="active">about</a></li>
+            <li><a href="#work" data-nav="work">work history</a></li>
             <li><a href="#projects" data-nav="projects">projects</a></li>
-            <li><a href="#work" data-nav="work">work</a></li>
             <li><a href="#education" data-nav="education">education</a></li>
             <li><a href="#contact" data-nav="contact">contact</a></li>
             <li><a href="#resume" data-nav="resume">résumé</a></li>
@@ -67,8 +67,8 @@
       <div class="mobilebar-panel">
         <ul>
           <li><a href="#about" data-nav="about" class="active">about</a></li>
+          <li><a href="#work" data-nav="work">work history</a></li>
           <li><a href="#projects" data-nav="projects">projects</a></li>
-          <li><a href="#work" data-nav="work">work</a></li>
           <li><a href="#education" data-nav="education">education</a></li>
           <li><a href="#contact" data-nav="contact">contact</a></li>
           <li><a href="#resume" data-nav="resume">résumé</a></li>
@@ -99,7 +99,7 @@
       <section id="hero" class="hero">
         <h1 class="hero-name">hi, i'm <em>michael</em> fan</h1>
         <p class="hero-tagline">
-          software developer at Expedia Group, writing code to take you on your next vacation. i build with javascript, node, and java; whatever stack the job needs, i'll learn it.
+          software developer, building with AI thoughtfully; <em>guardrails</em> and intentionality over hype. i bake and cook with the same energy, and i'm very serious about breakfast.
         </p>
       </section>
 
@@ -121,15 +121,51 @@
           </div>
           <div class="prose">
             <p>
-              hello. i'm a software developer at <em>Expedia Group</em>, writing code to take you on your next vacation. i specialize in javascript, node, and java, but i'll learn whatever stack i need to get the job done.
+              hello. first of all, thanks for stopping by; i appreciate it.
             </p>
             <p>
-              i graduated in computer science from the <em>Georgia Institute of Technology</em>. in school, i was an intern with Expedia's homepage team. i also did a software dev co-op with the network automation rockstars at Itential.
+              i'm a software developer at <em>Expedia Group</em>, and i want to help take you on your next vacation.
             </p>
             <p>
-              outside of corporate, i like exercise, gridiron, and i think i can bake <em>profiteroles</em> as good as your nearest patisserie's.
+              at work, i enjoy leading projects end-to-end, operational excellence that makes for a boring on-call, and building with AI; thoughtfully, frugally, with guardrails.
+            </p>
+            <p>
+              i'm a computer science grad from the <em>Georgia Institute of Technology</em>. my first job was with the network automation rockstars at <em>Itential</em>, who i'm grateful to for setting my bar on how to work with and respect humans.
+            </p>
+            <p>
+              outside of corporate, i pass my time deadlifting, fussing over single-origin coffee, and i think i can make <em>cream puffs</em> as good as your nearest bakery's.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="work" data-spy="work" class="block">
+        <header class="section-title">
+          <h2>work history</h2>
+        </header>
+        <p class="block-lede">
+          the sweaty impact metrics live on the <a class="inline-link" href="#resume">résumé</a>; this is the conversational tour.
+        </p>
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-period">2021–present</div>
+            <div class="work-rule" aria-hidden="true"></div>
+            <h3 class="work-role">software developer, <em class="work-company">Expedia Group</em></h3>
+            <p>i'm on the Virtual Market Coach team; the coaching system that nudges hotel and vacation-rental partners toward better listings on Partner Central and Vrbo Owner. lately i lead our server-driven UI platform (internally, <em>Blueprint</em>) and the Supply Partner MCP server that exposes coaching tips and inline actions to AI agents.</p>
+            <p>i've also led the team's accessibility push, a Spring Boot v3 upgrade on the domain service, and our monthly operational excellence reviews. earlier on this same team i was tech lead for the Top Tasks integration and a contributor to the Cars shopping migration onto EGTP.</p>
+          </article>
+          <article class="work-item">
+            <div class="work-period">2019</div>
+            <div class="work-rule" aria-hidden="true"></div>
+            <h3 class="work-role">software developer co-op, <em class="work-company">Itential</em></h3>
+            <p>built early iterations of the <em>Adapter Builder</em>, a low-code tool that turns OpenAPI specs into Node.js network-API adapters; cut adapter development time from 30+ hours to about one. customer-facing work landed in front of Atlassian, VMware, and NetBrain, and got demoed at ONUG.</p>
+          </article>
+          <article class="work-item">
+            <div class="work-period">2018–2019</div>
+            <div class="work-rule" aria-hidden="true"></div>
+            <h3 class="work-role">software developer, <em class="work-company">Corbii</em></h3>
+            <p>a spaced-repetition flashcard app funded out of Georgia Tech's <em>CREATE-X</em>. i owned the entire backend and a healthy slice of the frontend.</p>
+          </article>
         </div>
       </section>
 
@@ -138,11 +174,29 @@
           <h2>projects</h2>
         </header>
         <p class="block-lede">
-          a handful of things i've worked on: student-club builds, hackathon weekends, and the occasional small experiment.
+          a handful of things from before i started full-time; <em>student-club</em> builds, hackathon weekends, and a couple of small experiments. github has the long tail.
         </p>
         <div class="projects-grid">
 
           <article class="project" style="--offset: 0px;">
+            <a class="project-frame" href="https://github.com/michaelyfan" target="_blank" rel="noopener" aria-label="PuntList">
+              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
+                <defs><pattern id="d0" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
+                <rect width="100" height="75" fill="url(#d0)"/>
+              </svg>
+              <span class="project-glyph">P</span>
+            </a>
+            <div class="project-meta">
+              <h3>
+                <span class="project-title">PuntList</span>
+                <span class="project-year">developer</span>
+              </h3>
+              <p>a list app where every item is either done or punted to another list; one tap, no menus.</p>
+              <ul class="tags"><li>flutter</li><li>firebase</li></ul>
+            </div>
+          </article>
+
+          <article class="project" style="--offset: 28px;">
             <a class="project-frame" href="https://github.com/dscgt/recycling_website" target="_blank" rel="noopener" aria-label="GT Green">
               <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
                 <defs><pattern id="d1" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
@@ -155,26 +209,8 @@
                 <span class="project-title">GT Green</span>
                 <span class="project-year">project lead</span>
               </h3>
-              <p>apps for GT recycling, by the developer student club.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li><li>dolor</li></ul>
-            </div>
-          </article>
-
-          <article class="project" style="--offset: 28px;">
-            <a class="project-frame" href="https://corbii-web.web.app/" target="_blank" rel="noopener" aria-label="Corbii">
-              <svg class="stripes" viewBox="0 0 100 75" preserveAspectRatio="none">
-                <defs><pattern id="d2" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8" opacity="0.35"/></pattern></defs>
-                <rect width="100" height="75" fill="url(#d2)"/>
-              </svg>
-              <span class="project-glyph">C</span>
-            </a>
-            <div class="project-meta">
-              <h3>
-                <span class="project-title">Corbii</span>
-                <span class="project-year">co-founder</span>
-              </h3>
-              <p>learning as smart as you.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+              <p>apps that took Georgia Tech's recycling office off paper; logistics for 100+ campus bins, with the Developer Student Club.</p>
+              <ul class="tags"><li>flutter</li><li>angular</li><li>firebase</li></ul>
             </div>
           </article>
 
@@ -191,8 +227,8 @@
                 <span class="project-title">Claire</span>
                 <span class="project-year">developer</span>
               </h3>
-              <p>love at first write.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li><li>amet</li></ul>
+              <p>a "love at first write" dating app for GT's 2019 Appathon; second place.</p>
+              <ul class="tags"><li>react native</li><li>firebase</li></ul>
             </div>
           </article>
 
@@ -209,8 +245,8 @@
                 <span class="project-title">Is It Orange</span>
                 <span class="project-year">developer</span>
               </h3>
-              <p>🍊</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+              <p>a tiny color-rating site i built to teach myself responsive layouts and serverless.</p>
+              <ul class="tags"><li>react</li><li>firebase</li></ul>
             </div>
           </article>
 
@@ -227,8 +263,8 @@
                 <span class="project-title">Cosai</span>
                 <span class="project-year">developer</span>
               </h3>
-              <p>facial recognition for more efficient retail.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+              <p>live facial recognition for retail floors, for the T-Mobile Closer to the Customer hackathon.</p>
+              <ul class="tags"><li>azure</li><li>react</li></ul>
             </div>
           </article>
 
@@ -245,8 +281,8 @@
                 <span class="project-title">Leash</span>
                 <span class="project-year">graphic designer</span>
               </h3>
-              <p>for the ones that get away.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+              <p>a "find the one that got away" hackathon project; i did the visual design.</p>
+              <ul class="tags"><li>design</li></ul>
             </div>
           </article>
 
@@ -263,38 +299,11 @@
                 <span class="project-title">ElectricFieldSim-Web</span>
                 <span class="project-year">developer</span>
               </h3>
-              <p>a web version of orion-f's electric field simulator.</p>
-              <ul class="tags"><li>lorem</li><li>ipsum</li></ul>
+              <p>a browser port of orion-f's electric field simulator; physics-class nostalgia.</p>
+              <ul class="tags"><li>js</li><li>canvas</li></ul>
             </div>
           </article>
 
-        </div>
-      </section>
-
-      <section id="work" data-spy="work" class="block">
-        <header class="section-title">
-          <h2>work</h2>
-        </header>
-        <div class="work-list">
-          <article class="work-item">
-            <div class="work-period">lorem–ipsum</div>
-            <div class="work-rule" aria-hidden="true"></div>
-            <h3 class="work-role">lorem ipsum, <em class="work-company">dolor sit amet</em></h3>
-            <ul class="work-notes">
-              <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</li>
-              <li>ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li>duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-            </ul>
-          </article>
-          <article class="work-item">
-            <div class="work-period">lorem–ipsum</div>
-            <div class="work-rule" aria-hidden="true"></div>
-            <h3 class="work-role">consectetur adipiscing, <em class="work-company">elit sed do</em></h3>
-            <ul class="work-notes">
-              <li>excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-              <li>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
-            </ul>
-          </article>
         </div>
       </section>
 
@@ -316,8 +325,7 @@
         </header>
         <div class="contact-grid">
           <div class="prose">
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. send a note about anything: work, weird side ideas, or just to say hello.</p>
-            <p class="ink-mute">currently: lorem ipsum dolor sit amet.</p>
+            <p>if you've made it this far, maybe we could chat. drop a note about anything; work, weird side ideas, or just to say hello.</p>
           </div>
           <ul class="channels">
             <li>
@@ -349,8 +357,7 @@
         <div class="resume-grid">
           <article class="resume-doc">
             <header class="resume-doc-head">
-              <span class="resume-doc-title">michael_fan.pdf</span>
-              <span class="resume-doc-meta">live preview</span>
+              <span class="resume-doc-title">MichaelFan_Resume.pdf</span>
             </header>
             <div class="resume-iframe-wrap">
               <iframe src="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/preview" title="résumé preview"></iframe>
@@ -359,19 +366,18 @@
           <div class="resume-cta">
             <a class="btn" href="https://drive.google.com/file/d/1wtu-7LvQeH_7XkZ5Js6MZErE9zo67HPw/view" target="_blank" rel="noopener">
               <span>open / download</span>
-              <span class="arrow">↓</span>
             </a>
             <p class="ink-soft">
-              prefer something tailored to the role you have in mind? write to <a class="inline-link" href="mailto:michaelyfan100@gmail.com">michaelyfan100@gmail.com</a> and i'll send a fresh copy.
+              prefer something tailored to the work you have in mind? write to <a class="inline-link" href="mailto:michaelyfan100@gmail.com">michaelyfan100@gmail.com</a>.
             </p>
-            <p class="fineprint">lorem ipsum dolor sit amet</p>
+            <p class="fineprint">last updated &lt;month&gt; &lt;year&gt;; ask if you'd like a tailored version.</p>
           </div>
         </div>
       </section>
 
       <footer class="footer">
         <p class="thanks">thanks for reading.</p>
-        <p class="fineprint">© <span id="footer-year">2026</span> michael fan · set in roboto serif &amp; roboto mono · no analytics, no cookies, no nonsense</p>
+        <p class="fineprint">© <span id="footer-year">2026</span> michael fan · set in roboto serif &amp; roboto mono</p>
       </footer>
 
     </main>
