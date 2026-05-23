@@ -1,99 +1,101 @@
-# Content Improvements
+# site overhaul — agent brief
 
-- [ ] update top heading to "hi, i'm michael fan", and update hero content (see below)
-- [ ] update about section (see below)
-- [ ] update work history section (see below)
-- [ ] update projects section (see below)
-- [ ] update education section (see below)
-- [ ] update resume section: The name of the file is MichaelFan_Resume.pdf and remove "LIVE PREVIEW". TODO -- make a decision about columns
-- [ ] update footer: remove "no analytics, no cookies, no nonsense"
-- [ ] all things that a human needs, or are being deferred, should be noted in README TODOs afterwards
+## how to work this brief
 
---- 
+Follow sections in order. Respect the voice rules in `CLAUDE.md` (lowercase running copy, capitalize proper nouns, no em-dashes). Anything tagged **HUMAN** goes into the "hand back to me" list at the bottom instead of being attempted. Anything tagged **BRAINSTORM** must be surfaced to me for a decision before you code it.
 
+## global changes
 
-# The stuff under "hi, i'm michael fan" ("Hero" content)
+- section order: about > work history > projects > education > contact > resume
+- rename the "work" section to "work history"
+- no em-dashes anywhere on the site
+- consistent lowercase "i" in running copy
+- improve the font fallback stack: pick sans / serif / mono fallbacks that match the Roboto family's modern vibe and are likely already installed on the user's system. serif stays serif, sans stays sans, mono stays mono.
+- mobile-responsive at all breakpoints already defined in `css/index.css`
+- keyboard-navigable: tab order works through every interactive element
 
-> software developer, <TODO: something to do with how I use AI: I think it's a great tool but I emphasize guardrails and intentionality>, <TODO: something to do with cooking or baking, hobbies I very much enjoy. bonus if you can include the word "developer">, very serious about breakfast. 
+## content
 
-## about section
+### hero
 
-### picture
+Top heading becomes `hi, i'm michael fan`. Draft for the tagline below it:
 
-* (a human must provide this) different profile pic
+> software developer, <TODO: something about how I use AI — I think it's a great tool but I emphasize guardrails and intentionality>, <TODO: something about cooking or baking, hobbies I very much enjoy. bonus if you can include the word "developer">, very serious about breakfast.
 
-### content
+> **BRAINSTORM:** my location (currently Seattle, WA) should appear somewhere. hero or about?
 
-> hello. first of all, thanks for coming here. i appreciate it. <TODO: modify if necessary. short and sweet, thanking the user proactively for their time>
+### about
 
-> i'm a software developer at <em>Expedia Group</em> and I want to help take you on your next vacation. 
+- profile picture: **HUMAN** (different one than the current)
+- content draft:
 
-> at work I enjoy: leading projects end-to-end, operational excellence which makes for a boring on-call, building with AI (and guardrails, and frugality, and intentionality).
+> hello. first of all, thanks for coming here. i appreciate it. <TODO: tweak if needed — short and sweet, thanking the visitor proactively for their time>
 
-> i am a computer science grad from the <em>Georgia Institute of Technology</em>. my first job was with the network automation rockstars at <em>Itential</em>, who I'm grateful to for helping me set my standard for how to work with and respect humans.
+> i'm a software developer at <em>Expedia Group</em> and i want to help take you on your next vacation.
 
-> outside of corporate, i pass my time deadlifting, being a coffee snob <TODO: I want a more intentional way to say that I am a third-wave coffee enthusiast ex. "tasting the notes of blueberrie in coffee" but this is too specific and I don't think people would get it>, and i think i can make cream puffs as good as your nearest bakery's.
+> at work i enjoy: leading projects end-to-end, operational excellence which makes for a boring on-call, building with AI (and guardrails, and frugality, and intentionality).
 
-## work history section
+> i'm a computer science grad from the <em>Georgia Institute of Technology</em>. my first job was with the network automation rockstars at <em>Itential</em>, who i'm grateful to for helping me set my standard for how to work with and respect humans.
 
-<TODO: this one is mostly up to you, the agent.>
+> outside of corporate, i pass my time deadlifting, being a coffee snob <TODO: a more intentional way to say "third-wave coffee enthusiast"; "tasting the notes of blueberry in coffee" is too specific>, and i think i can make cream puffs as good as your nearest bakery's.
 
-<The work history section under .claude/CONTENT_SUGGESTIONS.md is pretty good, but:
+### work history
 
-- note, in small text at the top, that the sweaty metrics for impact are on my resume.  (find a better way to word this.)
-- This section is a more prose-like. I just want to talk about my various positions. Give a brief overview, very conversational. My experience is in /Users/mfan/dev/Career/Context.
-- mention Expedia Group, Itential, Corbii. Don't have to separate by rank. In fact, don't mention rank at all, that's for my resume.
+Conversational prose, not résumé bullets. Up to you to draft.
 
-## projects section
+- small note at the top of the section: the sweaty impact metrics live on the résumé (find a nicer phrasing)
+- cover Expedia Group, Itential, Corbii. no need to separate by rank, and don't mention rank at all (that's the résumé's job)
+- pull facts from `/Users/mfan/dev/Career/Context` and the work-history block in `.claude/CONTENT_SUGGESTIONS.md`
 
-- Add the projects in /Users/mfan/dev/michaelyfan.github.io/.claude/CONTENT_SUGGESTIONS.md.
-- but exclude Corbii since that's work history.
-- projects should not have dates or roles. They're just personal projects. 
-- Also include another project. It should be the most recent:
-  - called "PuntList"
-  - it's an app that lets a user either check something off or move it to another list in one tap.
-  - flutter + firebase
-- pictures must be provided by a human, don't worry about that.
+### projects
 
-## education section
+- pull project list from `.claude/CONTENT_SUGGESTIONS.md`
+- exclude Corbii (it belongs under work history)
+- no dates, no roles; these are personal projects
+- add **PuntList** as the newest entry: an app that lets you either check something off or move it to another list in one tap. Flutter + Firebase.
+- project images: **HUMAN**
 
-keep as is
+### education
 
-## contact section
+Keep as is.
 
-Something along the lines of "if you've made it this far, maybe we could chat"
+> **BRAINSTORM:** worth collapsing education and contact into about, into projects, or splitting them across both?
 
-remove the grayscale "currently: ..." line, doesn't do anything
+### contact
 
-A human needs to verify the links
+- new copy along the lines of: *if you've made it this far, maybe we could chat*
+- remove the grayscale "currently: …" line; it doesn't do anything
+- link verification: **HUMAN**
 
-## resume section
+### resume
 
-- Remove "LIVE_PREVIEW"
-- a human needs to update the source
-- remove the arrow after "open / download" in the button.
-- change to "prefer something tailored to the work you have in mind? write to..."
+- the file is `MichaelFan_Resume.pdf`
+- remove the "LIVE PREVIEW" label
+- remove the arrow after "open / download" in the button
+- change the supporting copy to: *prefer something tailored to the work you have in mind? write to…*
+- updating the source PDF: **HUMAN**
 
-# Other Improvements
+> **BRAINSTORM:** column layout for this section.
 
-- [ ] make sure overall flow is about > work > projects > education > contact > resume. Also, rename it to "work history". also, I think this means some reordering is necessary.
-- [ ] improve the fonts used for backup, in case Google Fonts cannot load. Change them to fonts that are most likely supported natively by the user system which have the same vibe as Roboto family -- modern. Serif things should remain serif, sans-serif should remain sans, mono should remain mono.
-- [ ] the user experience should work well at mobile screen sizes -- mobile responsive.
-- [ ] the user should be able to use tab to navigate through the page.
-- [ ] (a human must do this) fix the resume PDF import
-- [ ] make sure there are no em-dashes!
-- [ ] my location (currently seattle, wa) should be on here somewhere...brainstorm with me to determine a location
-- [ ] consistent "I" casing.
-- [ ] brainstorm with me: collapse education and contact sections into about section, project section, or a split. 
+### footer
 
-Deferred
-* SEO/meta tags, OG image, favicon — not yet implemented -- defer this
-* Analytics decision (currently none, by design — confirm)
-* Domain + hosting + deploy pipeline
-* address https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fmichaelfan.me
-* address accessibility testing ex. https://www.whoishostingthis.com/resources/website-accessibility/
-* fully check browser compatibility--so far verified on all moderns. 
-* check mobile responsiveness
-* implement ethical analytics. Comply with GDPR?
-* optimize image load time
-* new project - Runway
+- remove the "no analytics, no cookies, no nonsense" line
+
+## hand back to me (human-only)
+
+- new profile picture
+- project images
+- résumé PDF source update
+- contact link verification
+
+## deferred (not now)
+
+- SEO / meta tags, OG image, favicon
+- analytics decision (currently none, by design; confirm)
+- domain, hosting, deploy pipeline
+- Lighthouse pass: https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fmichaelfan.me
+- accessibility audit (e.g. https://www.whoishostingthis.com/resources/website-accessibility/)
+- browser compatibility sweep beyond modern evergreens
+- ethical analytics, GDPR compliance
+- image load-time optimization
+- new project entry: Runway
